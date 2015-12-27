@@ -1,0 +1,12 @@
+﻿<div class="jumbotron">
+    <h1>Simple Calculator</h1>
+</div>
+<div class="row" ng-controller="CalculatorController">
+    <div id="panel_overall">
+        <div id="panel_display">{{display}}</div>
+        <div class="buttons">
+            <button ng-repeat="n in digits" id="{{'button_digit_' + n}}">{{n}}</button>
+            <button ng-repeat="(key, value) in operators" id="{{'button_' + key}}">{{value}}</button>
+        </div>
+    </div>
+</div>
